@@ -1,0 +1,63 @@
+.form {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.inputContainer {
+  position: relative;
+  flex-grow: 1;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  background-color: #313244; /* Catppuccin surface0 */
+  border: 2px solid #45475a; /* Catppuccin surface1 */
+  border-radius: 0.5rem;
+  color: #cdd6f4; /* Catppuccin text */
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #89b4fa; /* Catppuccin blue */
+  background-color: #1e1e2e; /* Catppuccin base */
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+  transform: translateY(-2.5rem) scale(0.8);
+  color: #89b4fa; /* Catppuccin blue */
+}
+
+.label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  color: #7f849c; /* Catppuccin overlay1 */
+  transition: all 0.3s ease;
+  pointer-events: none;
+  transform-origin: left top;
+}
+
+.button {
+  padding: 1rem 2rem;
+  background-color: #89b4fa; /* Catppuccin blue */
+  border: none;
+  border-radius: 0.5rem;
+  color: #1e1e2e; /* Catppuccin base */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #b4befe; /* Catppuccin lavender */
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}

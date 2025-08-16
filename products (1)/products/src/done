@@ -1,0 +1,18 @@
+useNavigate - Programmatic Navigation
+useParams - Dynamic Routing
+useLoaderData - To get the loader data;
+useActionData - get the Action data
+useNavigation - To get loading states
+useFetcher - To do actions without navigation
+
+redirect
+loader
+action
+
+BrowserRouter
+Routes
+Route
+Link
+NavLink
+Navigate
+Outlet

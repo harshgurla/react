@@ -1,0 +1,129 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  background-color: #313244; /* Catppuccin surface0 */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  transform: translateX(4px);
+  background-color: #45475a; /* Catppuccin surface1 */
+}
+
+.checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #89b4fa; /* Catppuccin blue */
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.checkbox.checked {
+  background-color: #89b4fa; /* Catppuccin blue */
+}
+
+.checkbox.checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1e1e2e; /* Catppuccin base */
+  font-size: 1rem;
+}
+
+.text {
+  flex-grow: 1;
+  color: #cdd6f4; /* Catppuccin text */
+  font-size: 1rem;
+  margin: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.editButton {
+  background-color: #f9e2af; /* Catppuccin yellow */
+  color: #1e1e2e; /* Catppuccin base */
+}
+
+.editButton:hover {
+  background-color: #fab387; /* Catppuccin peach */
+}
+
+.deleteButton {
+  background-color: #f38ba8; /* Catppuccin red */
+  color: #1e1e2e; /* Catppuccin base */
+}
+
+.deleteButton:hover {
+  background-color: #eba0ac; /* Catppuccin maroon */
+}
+
+.editForm {
+  flex-grow: 1;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editInput {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 2px solid #89b4fa; /* Catppuccin blue */
+  border-radius: 0.25rem;
+  background-color: #1e1e2e; /* Catppuccin base */
+  color: #cdd6f4; /* Catppuccin text */
+}
+
+.editInput:focus {
+  outline: none;
+  border-color: #b4befe; /* Catppuccin lavender */
+}
+
+.saveButton {
+  background-color: #a6e3a1; /* Catppuccin green */
+  color: #1e1e2e; /* Catppuccin base */
+}
+
+.saveButton:hover {
+  background-color: #94e2d5; /* Catppuccin teal */
+}
+
+.cancelButton {
+  background-color: #45475a; /* Catppuccin surface1 */
+  color: #cdd6f4; /* Catppuccin text */
+}
+
+.cancelButton:hover {
+  background-color: #585b70; /* Catppuccin surface2 */
+}
